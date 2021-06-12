@@ -22,7 +22,8 @@ const BlogIndex = ({ data, location }) => {
       </Layout>
     )
   }
-}```
+}
+```
 
 Some HTML
 ```html
@@ -101,5 +102,6 @@ while (window.isOpen())
 			theta = (180 / PI) * (float) std::atan2(width - mousePos.y, mousePos.x);
 		}
 }
-}```
+}
+```
 
