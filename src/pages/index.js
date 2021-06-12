@@ -30,14 +30,16 @@ const BlogIndex = ({ data, location }) => {
     <div>
       <TitleBar />
       <div className="uk-container uk-margin-top">
-        <div className="uk-flex uk-flex-around uk-flex-wrap uk-flex-center uk-text-center">
-          {posts.map(post => {
-            const title = post.frontmatter.title || post.fields.slug
-          
-            return (
-              <ArticleCard title={ title } to={ post.fields.slug }/>
-            )
-          })}
+        <div className="uk-grid uk-text-center" data-uk-grid>
+            {posts.map(post => {
+              const title = post.frontmatter.title || post.fields.slug
+            
+              return (
+                <div className="uk-width-1-3@m uk-width-1-2@s">
+                  <ArticleCard title={ title } to={ post.fields.slug }/>
+                </div>
+              )
+            })}
         </div>
       </div>
     </div>

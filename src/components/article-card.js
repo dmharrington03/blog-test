@@ -4,7 +4,7 @@ export default function ArticleCard (props) {
 
     const format = (
             <div className="uk-card uk-card-default uk-card-hover 
-                            uk-padding-remove uk-margin-top">
+                            uk-padding-remove">
                 <div className="uk-card-media-top">
                     <img src="" height="auto"/>
                 </div>
